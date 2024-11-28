@@ -1,0 +1,40 @@
+{
+    "name" : "Prothes Barai",
+    "email" : "developerprothes16@gmail.com",
+
+    "education" : [
+        {
+            "school" : "Paisa High School & College",
+            "group" : "Science",
+            "gpa" : "5.00",
+            "passing_year" : "2014"
+        },
+        {
+            "school" : "Shaheed Smriti College,Sashikar",
+            "group" : "Science",
+            "gpa" : "4.89",
+            "passing_year" : "2017"
+        },
+        {
+            "school" : "Barisal Information Technology College",
+            "group" : "CSE",
+            "gpa" : "3.10",
+            "passing_year" : "2014"
+        }
+    ],
+
+    "skills" : [
+        {
+            "language" : "JAVA",
+            "learn" : "W3 Schools"
+        },
+        {
+            "language" : "Python",
+            "learn" : "FreeCodeCamp"
+        },
+        {
+            "language" : "XML",
+            "learn" : "W3 Schools"
+        }
+    ]
+}

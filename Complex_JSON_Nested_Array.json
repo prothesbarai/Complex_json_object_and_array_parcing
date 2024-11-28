@@ -1,0 +1,79 @@
+[
+    {
+        "name" : "Prothes",
+        "dept" : "CSE",
+        "subjects" : [
+            {
+                "semester" : "1st",
+                "sub" : "C Programming"
+            },
+            {
+                "semester" : "2nd",
+                "sub" : "Digital System Design"
+            },
+            {
+                "semester" : "3rd",
+                "sub" : "Data Structure &  OOP"
+            },
+            {
+                "semester" : "4th",
+                "sub" : "DBMS & Algorithm"
+            },
+            {
+                "semester" : "5th",
+                "sub" : "Data and tele-communication"
+            },
+            {
+                "semester" : "6th",
+                "sub" : "Software Engineer & Networking"
+            },
+            {
+                "semester" : "7th",
+                "sub" : "AI & Web Engineering"
+            },
+            {
+                "semester" : "8th",
+                "sub" : "Networking System Security"
+            }
+        ]
+    },
+    
+    {
+        "name" : "Asp",
+        "dept" : "CSE",
+        "subjects" : [
+            {
+                "semester" : "1st",
+                "sub" : "C Programming"
+            },
+            {
+                "semester" : "2nd",
+                "sub" : "Digital System Design"
+            },
+            {
+                "semester" : "3rd",
+                "sub" : "Data Structure &  OOP"
+            },
+            {
+                "semester" : "4th",
+                "sub" : "DBMS & Algorithm"
+            },
+            {
+                "semester" : "5th",
+                "sub" : "Data and tele-communication"
+            },
+            {
+                "semester" : "6th",
+                "sub" : "Software Engineer & Networking"
+            },
+            {
+                "semester" : "7th",
+                "sub" : "AI & Web Engineering"
+            },
+            {
+                "semester" : "8th",
+                "sub" : "Networking System Security"
+            }
+        ]
+    }
+]
