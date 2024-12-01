@@ -4,10 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
 
 public class MainActivity extends AppCompatActivity {
+    private long lastBackPressedBtnTime = 0;
+    private static final long backPressed_btn_time = 2000;
     private LottieAnimationView animationView;
     private ListView listView;
 
@@ -22,4 +25,27 @@ public class MainActivity extends AppCompatActivity {
         animationView = findViewById(R.id.animationView);
 
     }
+    // =============================== On Create Method End Here ===========================================
+
+
+
+
+
+
+    // ===========================================On BackPressed Method start Here ===================================================
+    @Override
+    public void onBackPressed() {
+        if (isTaskRoot()){
+            long getCurrentTime = System.currentTimeMillis();
+            if (getCurrentTime - lastBackPressedBtnTime < backPressed_btn_time){
+                finish();
+            }else{
+                lastBackPressedBtnTime = getCurrentTime;
+                Toast.makeText(this, "Tap again to exit", Toast.LENGTH_SHORT).show();
+            }
+        }else{
+            super.onBackPressed();
+        }
+    }
+    // ===========================================On BackPressed Method End Here =====================================================
 }
