@@ -9,7 +9,7 @@ import com.airbnb.lottie.LottieAnimationView;
 
 public class MainActivity extends AppCompatActivity {
     private LottieAnimationView animationView;
-    private ListView listView;
+    private ListView listView1,listView2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         animationView = findViewById(R.id.animationView);
-        listView = findViewById(R.id.listView);
+        listView1 = findViewById(R.id.listView1);
+        listView2 = findViewById(R.id.listView2);
 
     }
 }

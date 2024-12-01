@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical"
-    android:background="@color/white"
+    android:background="@color/background"
+    android:padding="20dp"
     >
 
     <com.airbnb.lottie.LottieAnimationView
@@ -16,17 +16,127 @@
         app:lottie_rawRes="@raw/animated_loader"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        android:layout_gravity="center"
+        android:layout_centerInParent="true"
         android:visibility="gone"
         />
 
-    <ListView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/listView"
-        android:listSelector="@color/transparent"
-        android:divider="@color/transparent"
+        android:orientation="vertical"
         android:visibility="visible"
-        />
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-</LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/textTitle"
+                android:text="Title"
+                android:textColor="@color/black"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/textTitle"
+                android:weightSum="5"
+                android:layout_marginTop="10dp"
+                android:id="@+id/linearLayout1"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:gravity="right"
+                    android:text="Email : "
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:gravity="left"
+                    android:id="@+id/textEmails"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/linearLayout1"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:layout_marginTop="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="My Education : "
+                        android:paddingStart="20dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:layout_marginVertical="10dp"
+                        />
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/listView1"
+                        android:listSelector="@color/transparent"
+                        android:divider="@color/transparent"
+                        android:visibility="visible"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="My Skills :"
+                        android:paddingStart="20dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:layout_marginVertical="10dp"
+                        />
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/listView2"
+                        android:listSelector="@color/transparent"
+                        android:divider="@color/transparent"
+                        android:visibility="visible"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
