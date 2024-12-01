@@ -44,6 +44,22 @@
         {
             "language" : "XML",
             "learn" : "W3 Schools"
+        },
+        {
+            "language" : "HTML",
+            "learn" : "W3 Schools"
+        },
+        {
+            "language" : "CSS",
+            "learn" : "W3 Schools"
+        },
+        {
+            "language" : "MySQL",
+            "learn" : "W3 Schools"
+        },
+        {
+            "language" : "FireBase",
+            "learn" : "W3 Schools"
         }
     ]
 }
