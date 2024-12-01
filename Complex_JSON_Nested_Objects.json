@@ -5,21 +5,30 @@
     "education" : [
         {
             "school" : "Paisa High School & College",
+            "class" : "JSC",
+            "group" : "All",
+            "gpa" : "5.00",
+            "passing_year" : "2012"
+        },{
+            "school" : "Paisa High School & College",
+            "class" : "SSC",
             "group" : "Science",
             "gpa" : "5.00",
-            "passing_year" : "2014"
+            "passing_year" : "2015"
         },
         {
             "school" : "Shaheed Smriti College,Sashikar",
+            "class" : "HSC",
             "group" : "Science",
             "gpa" : "4.89",
             "passing_year" : "2017"
         },
         {
             "school" : "Barisal Information Technology College",
+            "class" : "BSC",
             "group" : "CSE",
-            "gpa" : "3.10",
-            "passing_year" : "2014"
+            "gpa" : "(CGPA) 3.10",
+            "passing_year" : "2022"
         }
     ],
 

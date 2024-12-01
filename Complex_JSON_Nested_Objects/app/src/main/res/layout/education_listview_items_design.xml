@@ -47,7 +47,32 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.7"
+                    android:layout_weight="0.8"
+                    android:text="Class : "
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.2"
+                    android:text="Science"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:id="@+id/className"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
                     android:text="Group : "
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -56,7 +81,7 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2.3"
+                    android:layout_weight="2.2"
                     android:text="Science"
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -72,7 +97,7 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1.2"
+                    android:layout_weight="1.4"
                     android:text="CGPA / GPA : "
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -81,7 +106,7 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1.8"
+                    android:layout_weight="1.6"
                     android:text="3.10"
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -97,7 +122,7 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1.3"
+                    android:layout_weight="1.5"
                     android:text="Passing Year : "
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -106,7 +131,7 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1.7"
+                    android:layout_weight="1.5"
                     android:text="2022"
                     android:textSize="20sp"
                     android:textStyle="bold"

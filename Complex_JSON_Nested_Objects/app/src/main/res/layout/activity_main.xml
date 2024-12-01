@@ -17,14 +17,15 @@
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         android:layout_centerInParent="true"
-        android:visibility="gone"
+        android:visibility="visible"
         />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:visibility="visible"
+        android:visibility="gone"
+        android:id="@+id/mainLinearLayout"
         >
         <RelativeLayout
             android:layout_width="match_parent"
@@ -36,7 +37,7 @@
                 android:textSize="30sp"
                 android:textStyle="bold"
                 android:gravity="center"
-                android:id="@+id/textTitle"
+                android:id="@+id/textMainTitle"
                 android:text="Title"
                 android:textColor="@color/black"
                 />
@@ -44,7 +45,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_below="@id/textTitle"
+                android:layout_below="@id/textMainTitle"
                 android:weightSum="5"
                 android:layout_marginTop="10dp"
                 android:id="@+id/linearLayout1"
@@ -98,7 +99,7 @@
                     <ListView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:id="@+id/listView1"
+                        android:id="@+id/educationListView"
                         android:listSelector="@color/transparent"
                         android:divider="@color/transparent"
                         android:visibility="visible"
@@ -125,7 +126,7 @@
                     <ListView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:id="@+id/listView2"
+                        android:id="@+id/skillsListView"
                         android:listSelector="@color/transparent"
                         android:divider="@color/transparent"
                         android:visibility="visible"
