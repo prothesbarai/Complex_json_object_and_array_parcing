@@ -29,6 +29,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
+    private long lastBackPressTime = 0;
+    private static final long double_pressed_backbtn = 2000;
     private String json_url = "https://prothesbarai.github.io/Complex_json_object_and_array_parcing/Complex_JSON_Nested_Objects.json";
     private LottieAnimationView animationView;
     private ListView educationListView,skillsListView;
@@ -121,7 +123,8 @@ public class MainActivity extends AppCompatActivity {
         requestQueue.add(jsonObjectRequest);
 
 
-    } //================================================ End On Create Method ============================================================
+    }
+    //================================================ End On Create Method ============================================================
 
 
 
@@ -172,7 +175,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
     // ============================================ Skills Adapter Start Here ============================================
     public class CustomSkillsAdapter extends BaseAdapter{
         @Override
@@ -210,6 +212,23 @@ public class MainActivity extends AppCompatActivity {
     // ============================================ Skills Adapter End Here ============================================
 
 
+
+    // ========================================= Double Click On Back Pressed Method Start Here ======================================================
+    @Override
+    public void onBackPressed() {
+        if (isTaskRoot()){
+            long currentTime = System.currentTimeMillis();
+            if (currentTime - lastBackPressTime < double_pressed_backbtn){
+                finish();
+            }else{
+                lastBackPressTime = currentTime;
+                Toast.makeText(this, "Press Back Again To Exit", Toast.LENGTH_SHORT).show();
+            }
+        }else{
+            super.onBackPressed();
+        }
+    }
+    // =========================================== Double Click On Back Pressed Method End Here ======================================================
 
 
 }
