@@ -3,13 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:layout_margin="20dp"
-    >
+    android:layout_margin="20dp">
 
     <soup.neumorphism.NeumorphCardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="700dp"
         style="@style/Widget.Neumorph.CardView"
         app:neumorph_shapeType="flat"
         app:neumorph_lightSource="rightTop"
@@ -21,20 +21,25 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:padding="20dp"
             >
 
-            <TextView
+            <com.mursaat.extendedtextview.AnimatedGradientTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Name"
+                app:colors="@array/funny_color"
+                app:simultaneousColors="4"
+                android:gravity="center"
                 android:textStyle="bold"
                 android:textSize="25sp"
-                android:gravity="center"
+                android:text="Name"
+                app:angle="45"
+                app:speed="1000"
+                app:maxFPS="30"
                 android:id="@+id/yourName"
-                />
+            />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -44,6 +49,16 @@
                 android:gravity="center"
                 android:id="@+id/yourDept"
                 android:layout_marginTop="5dp"
+                />
+
+            <GridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:nestedScrollingEnabled="true"
+                android:padding="8dp"
                 />
 
         </LinearLayout>

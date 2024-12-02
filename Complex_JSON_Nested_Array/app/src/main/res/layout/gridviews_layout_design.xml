@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1st Semester"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:id="@+id/semesterName"
+                android:paddingHorizontal="20dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Software Engineer y Networking"
+                android:padding="5dp"
+                android:id="@+id/subName"
+                android:layout_marginTop="10dp"
+                />
+        </LinearLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+</LinearLayout>
