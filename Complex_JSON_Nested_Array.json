@@ -39,6 +39,44 @@
     },
     
     {
+        "name" : "Shreyasi",
+        "dept" : "CSE",
+        "subjects" : [
+            {
+                "semester" : "1st",
+                "sub" : "C/C++ Programming"
+            },
+            {
+                "semester" : "2nd",
+                "sub" : "Digital System Design"
+            },
+            {
+                "semester" : "3rd",
+                "sub" : "Data Structure &  OOP"
+            },
+            {
+                "semester" : "4th",
+                "sub" : "DBMS & Algorithm"
+            },
+            {
+                "semester" : "5th",
+                "sub" : "Software Engineer & Networking"
+            },
+            {
+                "semester" : "6th",
+                "sub" : "Data and tele-communication"
+            },
+            {
+                "semester" : "7th",
+                "sub" : "Networking System Security"
+            },
+            {
+                "semester" : "8th",
+                "sub" : "AI & Web Engineering"
+            }
+        ]
+    },
+    {
         "name" : "Asp",
         "dept" : "CSE",
         "subjects" : [
